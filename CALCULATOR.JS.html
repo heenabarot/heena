@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <body>
+            <form id="myform">
+                Number 1:<input type="text" name="txt1"/><br/><br>
+                Number 2:<input type="text" name="txt2"/><br/><br>
+                 Sum:<input type="text" name="txt3" /><br/><br>
+                <input type="button" onclick="printData()" value="Click Me"/><br><br>
+                <input type="button" onclick="printData()" value="Division"/><br><br>
+                <input type="button" onclick="printData()" value="Subtract"/><br><br>
+                <input type="button" onclick="printData()" value="Multiply"/><br><br>   
+            </form>
+            <script>
+                function printData()
+                
+                {
+                    var a=myform.txt1.value;
+                    var b=myform.txt2.value;
+                    var c=parseInt(a)+ parseInt(b);
+                    
+                    
+                    document.write("A value is",a,"<br/>B value is",b,"<br/>Sum is",c);
+               
+
+                }
+                function Subtract()
+                {
+                    var a=myform.txt1.value;
+                    var b=myform.txt2.value;
+                    var c=parseInt(a)-parseInt(b);
+
+                    document.write("A value is",a,"<br/>B value is",b,"<br/> subtract value is",c);
+                }
+                function Multiply()
+                {
+                    var a=myform.txt1.value;
+                    var b=myform.txt2.value;
+                    var c=parseInt(a) * parseInt(b);
+                    document.write("A value is",a,"<br/>B value is",b,"<br/> multiplication value is",c);
+                    
+                }
+                function Division()
+                {
+                    var a=myform.txt1.value;
+                    var b=myform.txt2.value;
+                    var c=parseInt(a) / parseInt(b);
+                    document.write("A value is",a,"<br/>B value is",b,"<br/>division value is",c);
+                }
+                myform.txt3.value=c;
+            
+            </script>
+            </script>
+        </body>
+    </head>
+</html>
+                 
